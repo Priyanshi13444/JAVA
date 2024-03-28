@@ -1,0 +1,30 @@
+//checking hether the string is palindrome or not
+
+import java.util.*;
+import java.util.Arrays;
+
+public class JavaBasics{
+    public static boolean ispalindrome(String S1){                  //palindrome checking function
+        int i=0;
+        int j= S1.length()-1;
+        while(j>=i){
+            char chi=S1.charAt(i);
+            char chj=S1.charAt(j);
+            if(chi==chj){
+                i++;
+                j--;
+            }
+            else{
+                return false;
+            }
+        }
+        return true;
+        
+    }
+    public static void main(String args[]){
+        Scanner sc= new Scanner(System.in);
+        String S1 = sc.next( );
+        boolean ispal=ispalindrome(S1);
+        System.out.println(ispal); 
+    }
+}
