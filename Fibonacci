@@ -1,0 +1,46 @@
+//TO PRINT ONLY THE ANSWER OF Nth FIBONACCI 
+import java.util.*;
+public class Solution{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print(fib(n)+" ");
+    }
+    static int fib(int n) {
+        if(n==0 ||n==1) return n;
+        else
+        return fib(n-1)+fib(n-2);
+    }
+}
+/*INPUT:
+5
+OUTPUT:
+5 */
+
+
+
+
+
+//TO PRINT THE SERIES OF FIBONACCI
+import java.util.*;
+public class Solution{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+        System.out.print(fib(i)+" ");
+        }
+    }
+    static int fib(int i) {
+        if(i==0 ||i==1) return i;
+        else
+        return fib(i-1)+fib(i-2);
+    }
+}
+
+/*
+INPUT:
+10
+OUTPUT:
+0 1 1 2 3 5 8 13 21 34
+*/
