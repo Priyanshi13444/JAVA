@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Prac {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int product=print(a,b);
+        System.out.println("a x b: " + product);
+    }
+    public static int print(int a,int b){
+        return a*b;
+        
+    }
+}
