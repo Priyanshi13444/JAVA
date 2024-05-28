@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Prac {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int row=1;
+        int col=n;
+        while(row<=n){
+            if(row==1 ||row==n){              //for 1 and last row 
+                for(int i=1;i<=col;i++){
+                    System.out.print(" * ");
+                }
+            }else{
+                System.out.print(" * ");
+                for(int i=1;i<n-1;i++){
+                    System.out.print("   ");
+                }
+                System.out.print(" * ");
+            }
+            System.out.println();
+            row++;
+        }
+    }
+}
+
+/* INPUT:
+6
+OUPUT:
+ *  *  *  *  *  *
+ *              *
+ *              *
+ *              *
+ *              *
+ *  *  *  *  *  *          */
