@@ -3,8 +3,23 @@ import java.util.*;
 public class Prac {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        System.out.println("Bin to Dec:");
         int bin=sc.nextInt();
         System.out.println(bindec(bin));
+        System.out.println("Dec to Bin:");
+        int n=sc.nextInt();
+        System.out.println(decbin(n));
+    }
+    public static int decbin(int n){
+        int pow=0;
+        int binary=0;
+        while(n>0){
+            int rem = n%2;
+            binary= binary + (rem * (int)Math.pow(10,pow));
+            pow++;
+            n=n/2;
+        }
+        return binary;
     }
     public static int bindec(int bin){
         int pow=0;
